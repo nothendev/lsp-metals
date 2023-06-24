@@ -366,7 +366,7 @@ sources."
    ("metals.java-format.eclipse-config-path" lsp-metals-java-format.eclipse-config-path)
    ("metals.java-format.eclipse-profile" lsp-metals-java-format.eclipse-profile)
    ("metals.scala-cli-launcher" lsp-metals-scala-cli-launcher)
-   ("metals.enable-semantic-highlighting" lsp-metals-enable-semantic-highlighting t)))
+   ("metals.enableSemanticHighlighting" lsp-metals-enable-semantic-highlighting t)))
 
 (lsp-dependency
  'coursier
@@ -968,7 +968,7 @@ configuration name.  VAR is the variable holding the value of the configuration.
 (lsp-metals--create-bool-toggle "show-implicit-arguments" "show-implicit-arguments" lsp-metals-show-implicit-arguments)
 (lsp-metals--create-bool-toggle "show-super-method-lenses" "super-method-lenses-enabled" lsp-metals-super-method-lenses-enabled)
 (lsp-metals--create-bool-toggle "show-implicit-conversions" "show-implicit-conversions-and-classes" lsp-metals-show-implicit-conversions-and-classes)
-(lsp-metals--create-bool-toggle "enable-semantic-highlighting" "enable-semantic-highlighting" lsp-metals-enable-semantic-highlighting)
+(lsp-metals--create-bool-toggle "enable-semantic-highlighting" "enableSemanticHighlighting" lsp-metals-enable-semantic-highlighting)
 
 (provide 'lsp-metals)
 ;;; lsp-metals.el ends here
